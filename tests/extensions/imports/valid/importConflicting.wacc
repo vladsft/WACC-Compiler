@@ -1,0 +1,12 @@
+# Output: 
+# 42
+# 43
+
+import "samelib.wacc";
+import "../lib/difflib.wacc";
+begin
+    int x = call samelib::f();
+    int y = call difflib::f();
+    println x;
+    println y
+end

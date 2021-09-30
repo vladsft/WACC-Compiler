@@ -1,0 +1,16 @@
+# do while loop flips bool to terminate
+
+# Output:
+# flip b!
+# end of loop
+
+begin
+  bool b = true ;
+
+  do 
+    println "flip b!" ;
+    b = !b 
+  while b
+  done ;
+  println "end of loop"
+end

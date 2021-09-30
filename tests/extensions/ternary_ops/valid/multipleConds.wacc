@@ -1,0 +1,9 @@
+# Output:
+# Product is odd.
+
+begin
+    int i;
+    int a = 11;
+    int b = 5;
+    println a % 2 != 0 && b % 2 != 0 ? "Product is odd." : "Product is even."
+end

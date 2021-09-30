@@ -1,0 +1,22 @@
+# Output:
+# 5
+
+begin
+    class a is
+        int x
+        int get_x() is
+            return this.x
+        end
+    end
+    class b is
+        a wrap_a
+        int get_x() is
+            int x = call this.wrap_a.get_x();
+            return x
+        end
+    end
+    a A = a{5};
+    b B = b{A};
+    int x = call B.get_x();
+    print x
+end

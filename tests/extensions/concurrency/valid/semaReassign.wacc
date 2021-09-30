@@ -1,0 +1,4 @@
+begin
+    sema s = sema(3);
+    s = sema(1)
+end

@@ -1,0 +1,15 @@
+# Prints a string in reverse order.
+
+# Output:
+# w
+# a
+# g
+# g
+# o
+
+begin
+  char[] s = ['w', 'a', 'g', 'g', 'o'] ;
+	for (int i = 0; i <= 4; i = i + 1) do
+		println s[i]
+	done
+end

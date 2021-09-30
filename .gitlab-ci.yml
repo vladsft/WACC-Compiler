@@ -1,0 +1,46 @@
+stages:
+  - lint
+  - build
+  - test-syntax
+  - test-semantics
+  - test-asm
+
+lint-job:
+  stage: lint
+  script:
+    - cd src/
+    - golint ./...
+
+build-job:
+  stage: build
+  script:
+    - make
+  artifacts:
+    untracked: true
+    expire_in: 30 days
+    paths:
+      - "compile"
+
+test-syntax-analysis-job:
+  stage: test-syntax
+  artifacts:
+    paths:
+      - "logs/log.txt"
+  script:
+    - true > logs/log.txt
+    - python3 tests/runtests.py -p
+
+test-semantic-analysis-job:
+  stage: test-semantics
+  script:
+    - cd src/
+    - go test ./...
+    - cd ..
+    - python3 tests/runtests.py -s
+    - python3 tests/runtests.py -s -e
+
+test-asm-generation-job:
+  stage: test-asm
+  script:
+    - python3 tests/runtests.py -x -c 15 -lf
+    - python3 tests/runtests.py -x -e

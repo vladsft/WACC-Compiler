@@ -1,0 +1,9 @@
+begin
+    struct sa is
+        int s   # 4
+        char b  # 1
+        bool c  # 1
+    end
+end
+
+

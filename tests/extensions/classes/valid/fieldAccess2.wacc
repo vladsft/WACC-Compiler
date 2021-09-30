@@ -1,0 +1,13 @@
+# Output:
+# 2
+# a
+
+begin
+    class sa is
+        char a
+        int b
+    end
+    sa obj = sa{'a', 2};
+    println obj.b;
+    println obj.a
+end

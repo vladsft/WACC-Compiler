@@ -1,0 +1,15 @@
+begin
+    struct sa is
+        int s   # 4
+        int b  # 1
+    end
+
+    int func(sb a) is
+        return a.s
+    end
+
+    sa a = sa{1, 2};
+    int b = call func(a)
+end
+
+

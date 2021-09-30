@@ -1,0 +1,4 @@
+begin
+    lock l;
+    acquire l
+end

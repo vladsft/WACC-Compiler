@@ -1,0 +1,8 @@
+# Output:
+# 30
+
+begin
+    int i = 5;
+    i *= 6;
+    println i
+end

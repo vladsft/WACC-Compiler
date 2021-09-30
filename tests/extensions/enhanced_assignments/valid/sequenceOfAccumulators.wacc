@@ -1,0 +1,12 @@
+# Output:
+# 35
+
+begin
+    int i = 12;
+    int j = 5;
+    i *= 6;
+    i /= 2;
+    i += 4;
+    i -= j;
+    println i
+end

@@ -1,0 +1,12 @@
+# ternary operator is used with '?', not '!'
+
+# Output:
+# 
+
+# Exit:
+# 100
+
+begin
+    int i = 4;
+    println i % 2 == 0 ! "even" : "odd"
+end

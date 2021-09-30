@@ -1,0 +1,11 @@
+# demonstrates functionality of the ternary operator in a binary operator expression
+
+# Output:
+# 6
+
+begin
+    int a = 12;
+    int b = 4;
+    int i = (a % 6 == 0 ? a / 6 : a % 6) + (b % 5 == 0 ? b / 5 : b % 5);
+    println i
+end

@@ -1,0 +1,4 @@
+begin
+    lock l;
+    sema_down l
+end

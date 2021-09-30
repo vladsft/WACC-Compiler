@@ -1,0 +1,4 @@
+begin
+    int x = 4;
+    release x
+end

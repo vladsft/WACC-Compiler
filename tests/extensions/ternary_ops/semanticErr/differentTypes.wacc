@@ -1,0 +1,18 @@
+# int =/= string
+
+# Output:
+# 
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  int i = 11 ;
+  println "Which numbers of a sequence are divisible by 3?";
+  while i >= 0 do
+    println i % 3 == 0 ? i : "fail";
+    i--
+  done
+end

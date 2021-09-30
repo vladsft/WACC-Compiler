@@ -1,0 +1,17 @@
+
+begin
+    struct sa is
+        char a
+        int b
+    end
+
+    class sb is
+        int a
+        char b
+    end
+    
+    class sc is
+        bool b
+    end
+
+end

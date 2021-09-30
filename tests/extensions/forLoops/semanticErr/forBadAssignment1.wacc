@@ -1,0 +1,13 @@
+# error -> a = i + 1
+
+# Output:
+# 
+
+# Exit:
+# 200
+
+begin
+  for (int i = 0; i < 5 ; a = i + 1) do
+    skip
+  done
+end

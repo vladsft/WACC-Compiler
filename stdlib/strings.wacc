@@ -1,0 +1,102 @@
+import "arrays.wacc";
+begin
+    char[] concat(char[] src, char[] dest) is
+        int length = len src + len src;
+        char[] new_str = make(char, length);
+        int i = 0;
+        while i < len src do
+            new_str[i] = src[i];
+            i = i + 1
+        done;
+        while i < length do 
+            new_str[i] = dest[i - len src];
+            i = i + 1
+        done;
+        return new_str 
+    end
+    #strcmp compares two strings -
+    #1. Their sizes must be equal
+    #2. Their contents must be equal
+    bool strcmp(char[] src, char[] dest) is 
+        int l1 = len src;
+        if l1 != len dest then
+            return false
+        else
+            skip
+        fi;
+        int i = 0;
+        while i < l1 do
+            if src[i] != dest[i] then
+                return false
+            else
+                skip
+            fi;
+            i = i + 1
+        done;
+        return true
+    end
+    string char_to_string(char c) is
+        string str = make(char, 1);
+        str[0] = c;
+        return str
+    end
+    #substring returns str[first:last) if either of these are out of bounds, an empty string is returned
+    string sub_string(char[] src, int first, int last) is
+        if first > len src || last > len src then
+            return ""
+        else
+            skip
+        fi;
+        char[] sub = make(char, last - first);
+        int i = 0;
+        while first < last do
+            sub[i] = src[first];
+            first = first + 1;
+            i = i + 1
+        done;
+        return sub
+    end
+    #split_string splits a string into strings with c
+    string[] split_string(string src, string sep) is
+        int curr = 0;
+        int prev = 0;
+        int sep_len = len sep;
+
+        string[] strings = make(string, 0);
+        while curr < len src do
+            string sub = call sub_string(src, curr, curr + sep_len);
+            bool equal = call strcmp(sub, sep);
+            if equal then
+                string sb = call sub_string(src, prev, curr);
+                string[] temp = call arrays::snoc_string_array(sb, strings);
+                free strings;
+                strings = temp;
+
+                curr = curr + sep_len;
+                prev = curr
+            else
+                curr = curr + 1
+            fi
+        done;
+        if len strings > 1 then
+            string sb = call sub_string(src, prev, curr);
+            string[] temp = call arrays::snoc_string_array(sb, strings);
+            free strings;
+            strings = temp
+        else
+            skip
+        fi;
+        return strings
+    end
+
+    #strcpy copies a string into another string
+    string strcpy(string src) is
+        string cpy = make(string, len src);
+        int i = 0;
+        while i < len cpy do
+            cpy[i] = src[i]
+        done;
+        return cpy
+    end
+    skip
+end

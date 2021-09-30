@@ -1,0 +1,77 @@
+[
+  {
+    "name": "./tests/extensions/structs/valid/uninitialisedDeclaration.wacc",
+    "exit_code": 0,
+    "output": 4
+  },
+  {
+    "name": "./tests/extensions/structs/valid/noBody.wacc",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "name": "./tests/extensions/structs/valid/structDeclaration.wacc",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "name": "./tests/extensions/structs/syntaxErr/emptyStruct.wacc",
+    "exit_code": 100,
+    "stage": "syntax"
+  },
+  {
+    "name": "./tests/extensions/structs/semanticErr/mismatchedFieldType.wacc",
+    "exit_code": 200,
+    "stage": "semantic"
+  },
+  {
+    "name": "./tests/extensions/structs/semanticErr/repeatedField.wacc",
+    "exit_code": 200,
+    "stage": "semantic"
+  },
+  {
+    "name": "./tests/extensions/structs/semanticErr/sameStruct.wacc",
+    "exit_code": 200,
+    "stage": "semantic"
+  },
+  {
+    "name": "./tests/extensions/structs/semanticErr/invalidExprInitialization.wacc",
+    "exit_code": 200,
+    "stage": "semantic"
+  },
+  {
+    "name": "./tests/extensions/structs/semanticErr/wrongInitialization.wacc",
+    "exit_code": 200,
+    "stage": "semantic"
+  },
+  {
+    "name": "./tests/extensions/structs/semanticErr/uninitialisedObject.wacc",
+    "exit_code": 200,
+    "stage": "semantic"
+  },
+  {
+    "name": "./tests/extensions/structs/valid/fieldNameOutside.wacc",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "name": "./tests/extensions/structs/valid/structObjectInitialised.wacc",
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "name": "./tests/extensions/structs/semanticErr/emptyConstructor.wacc",
+    "exit_code": 200,
+    "stage": "semantic"
+  },
+  {
+    "name": "./tests/extensions/structs/semanticErr/missingFieldAccess.wacc",
+    "exit_code": 200,
+    "stage": "semantic"
+  },
+  {
+    "name": "./tests/extensions/structs/semanticErr/wrongFieldTypeAssignment.wacc",
+    "exit_code": 200,
+    "stage": "semantic"
+  }
+]

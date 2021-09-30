@@ -1,0 +1,4 @@
+begin
+    int[] x = make(int, 5);
+    free x
+end

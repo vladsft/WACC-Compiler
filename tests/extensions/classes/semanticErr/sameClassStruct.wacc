@@ -1,0 +1,9 @@
+begin
+    class sa is
+        int a
+    end
+
+    struct sa is
+        int a
+    end
+end

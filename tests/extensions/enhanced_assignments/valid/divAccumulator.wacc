@@ -1,0 +1,8 @@
+# Output:
+# 6
+
+begin
+    int i = 30;
+    i /= 5;
+    println i
+end

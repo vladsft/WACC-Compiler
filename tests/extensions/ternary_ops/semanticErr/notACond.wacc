@@ -1,0 +1,12 @@
+# int =/= bool
+
+# Output:
+#
+
+# Exit:
+# 200
+
+begin
+    int i = 4;
+    println i ? "even" : "odd"
+end

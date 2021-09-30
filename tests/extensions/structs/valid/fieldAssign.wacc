@@ -1,0 +1,17 @@
+# Output:
+# 3
+
+begin
+    struct sa is
+        int s
+        int b
+    end
+
+    int func(sa a) is
+        return a.s
+    end
+
+    sa a = sa{1, 1};
+    a.s = 3;
+    println a.s
+end

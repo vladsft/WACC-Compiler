@@ -1,0 +1,12 @@
+# demonstrates the use of the ternary operator as an assignrhs,
+# and with an identifier and a int literal of the same type
+
+# Output:
+# 0
+
+begin
+    int i;
+    int a = 7;
+    i = a == 8 ? a : 0;
+    println i
+end

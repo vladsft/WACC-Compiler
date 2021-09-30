@@ -1,0 +1,11 @@
+# Output:
+# 0
+# 0
+# 0
+
+begin
+    int[] x = make(int, 3);
+    println x[0];
+    println x[1];
+    println x[2]
+end

@@ -1,0 +1,7 @@
+begin
+    class sa is
+        int s
+        int b
+    end
+    sa s = sa{}
+end

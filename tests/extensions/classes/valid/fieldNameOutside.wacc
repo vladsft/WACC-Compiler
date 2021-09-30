@@ -1,0 +1,6 @@
+begin
+    class sa is
+        int s
+    end
+    int s = 1
+end

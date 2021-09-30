@@ -1,0 +1,76 @@
+NOOP->
+exit->
+    <if eq .Code.OpType 4>
+    ldr r0, <op>.Code</op>
+    <else>
+    mov r0, <op>.Code</op>
+    <end>
+    bl exit
+label->
+    <.Name>:
+functionCall->
+    bl <.Name>
+move->
+    mov <op>.Dest</op>, <op>.Src</op>
+
+//Memory instructions
+stackInstr->
+    <1line>
+    <.T>{
+        <range $index, $reg := .Regs>
+        <if $index>,<end>
+        <$reg>
+        <end>}
+    </1line>
+decrementStack->
+    sub sp, sp, #<.Size>
+incrementStack->
+    add sp, sp, #<.Size>
+store->
+    str<.Size> <op>.Src</op>, <op>.Dest</op>
+load->
+    ldr <.Dest>, [<.Src>]
+storeHeap->
+    mov r0, =<.Size>
+    bl .malloc
+    str <.Reg>, [r0 <if ne 0 .Offset>, =.Offset<if ne 0 .Multiplier>, =.Multiplier<end><end>]
+freeHeap->
+    mov r0, <.Reg>
+    bl free
+
+//BSS storage
+stringLiteral->
+    msg_<.ID>:
+    .word <.Size>
+    .ascii "<.String>
+
+//Binary expressions
+boolExpr->
+    cmp <op>.Left</op>, <op>.Right</op>
+    mov<.True> <.Dest> #1
+    mov<.False> <.Dest> #0
+
+add->
+    add <.Dest>, <op>.Left</op>, <op>.Right</op>
+sub->
+    sub <.Dest>, <op>.Left</op>, <op>.Right</op>
+mult->
+    mul <.Dest>, <op>.Left</op>, <op>.Right</op>
+
+and->
+    and <.Dest>, <op>.Left</op>, <op>.Right</op>
+or->
+    orr <.Dest>, <op>.Left</op>, <op>.Right</op>
+xor->
+    eor <.Dest>, <op>.Left</op>, <op>.Right</op>
+
+branch->
+    b<.Condition> <.Label>
+div->
+    mov r0, <op>.Left</op>
+    mov r1, <op>.Right</op>
+    bl __aeabi_idiv
+mod->
+    mov r0, <op>.Left</op>
+    mov r1, <op>.Right</op>
+    bl __aeabi_idivmod

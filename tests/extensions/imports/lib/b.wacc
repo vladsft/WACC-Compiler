@@ -1,0 +1,7 @@
+#NOTEST
+begin
+    int b() is
+        return 12
+    end
+    skip
+end

@@ -1,0 +1,8 @@
+begin
+    class sa is
+        int f1
+        int f2
+    end
+    sa obj1 = sa{1, 2};
+    int b = obj1.c
+end

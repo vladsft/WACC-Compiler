@@ -1,0 +1,9 @@
+#NOTEST
+import "b.wacc";
+begin
+    int callB() is
+       int x = call b::b();
+       return x
+    end
+    skip
+end

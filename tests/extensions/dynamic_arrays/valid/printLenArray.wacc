@@ -1,0 +1,6 @@
+# Output:
+# 5
+begin
+    int[] x = make(int, 5);
+    print len x
+end

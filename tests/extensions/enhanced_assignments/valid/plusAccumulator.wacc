@@ -1,0 +1,8 @@
+# Output:
+# 69
+
+begin
+    int i = 15;
+    i += 54;
+    println i
+end

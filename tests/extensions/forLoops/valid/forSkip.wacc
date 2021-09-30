@@ -1,0 +1,10 @@
+# Executes the loop 10 times skipping each time.
+
+# Output:
+#
+
+begin
+	for (int i = 0; i < 7; i = i + 1) do
+		skip
+	done
+end

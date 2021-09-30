@@ -1,0 +1,7 @@
+#NOTEST
+begin
+    int f() is
+        return 42
+    end
+    skip
+end

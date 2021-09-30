@@ -1,0 +1,8 @@
+# Output: 
+# 42
+
+import "samelib.wacc";
+begin
+    int x = call samelib::f();
+    println x
+end

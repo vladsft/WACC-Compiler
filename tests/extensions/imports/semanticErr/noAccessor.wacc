@@ -1,0 +1,5 @@
+import "samelib.wacc";
+begin
+    int x = call f();
+    print x
+end

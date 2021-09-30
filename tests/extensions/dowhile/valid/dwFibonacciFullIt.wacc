@@ -1,0 +1,20 @@
+# iteratively calculate the given fibonacci number
+
+# Output:
+# The 14th fibonacci number is 377
+
+begin
+  int n = 14;
+  print "The 14th fibonacci number is " ;
+  int f0 = 0 ;
+  int f1 = 1 ;
+  int save = 0;
+  do
+    save = f0 ;
+    f0 = f1 ;
+    f1 = save + f1 ;
+    n = n - 1
+  while n > 0
+  done ;
+  println f0
+end

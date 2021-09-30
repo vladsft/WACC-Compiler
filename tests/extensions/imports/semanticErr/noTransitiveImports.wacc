@@ -1,0 +1,5 @@
+import "lib/t.wacc";
+begin
+    int a = call b::b();
+    print a
+end

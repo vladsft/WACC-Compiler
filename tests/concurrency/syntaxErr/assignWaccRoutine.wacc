@@ -1,0 +1,6 @@
+begin
+    int f() is
+        return 4
+    end
+    int y = wacc f()
+end

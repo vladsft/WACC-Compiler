@@ -1,0 +1,9 @@
+# demonstrates the use of the ternary operator with strings as the last two parameters
+
+# Output:
+# even
+
+begin
+    int i = 4;
+    println i % 2 == 0 ? "even" : "odd"
+end

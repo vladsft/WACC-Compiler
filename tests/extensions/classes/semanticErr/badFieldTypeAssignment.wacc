@@ -1,0 +1,7 @@
+begin
+    class sa is
+        int a
+        char b
+    end
+    sa obj = sa{1, 2}
+end

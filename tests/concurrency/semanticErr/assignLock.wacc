@@ -1,0 +1,3 @@
+begin
+    lock l = 4
+end

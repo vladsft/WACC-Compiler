@@ -1,0 +1,15 @@
+begin
+    class sa is
+        int s
+
+        int f() is
+            return 1
+        end
+        
+        int f() is 
+            return 1
+        end
+    end
+
+    int a = 'a'
+end

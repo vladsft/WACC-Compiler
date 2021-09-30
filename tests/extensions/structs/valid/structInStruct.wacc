@@ -1,0 +1,19 @@
+# Output:
+# a
+# 4233
+
+begin
+    struct sa is
+        char a
+        int b
+    end
+    struct sb is
+        int a 
+        sa c
+    end
+    int sa = 1;
+    sa objA = sa{'a', 4233};
+    sb objB = sb{1, objA};
+    println objB.c.a;
+    println objB.c.b
+end

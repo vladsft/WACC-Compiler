@@ -1,0 +1,25 @@
+# demonstrate the functionality of the ternary operator in a repetitive way
+
+# Output:
+# Which numbers of a sequence are divisible by 3?
+# fail
+# fail
+# pass
+# fail
+# fail
+# pass
+# fail
+# fail
+# pass
+# fail
+# fail
+# pass
+
+begin
+  int i = 11 ;
+  println "Which numbers of a sequence are divisible by 3?";
+  while i >= 0 do
+    println i % 3 == 0 ? "pass" : "fail";
+    i--
+  done
+end

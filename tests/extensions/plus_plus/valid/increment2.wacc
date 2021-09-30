@@ -1,0 +1,8 @@
+# Output:
+# 6
+
+begin
+    int i = 5;
+    i++;
+    println i
+end

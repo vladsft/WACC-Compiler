@@ -1,0 +1,13 @@
+# error -> i = i - b
+
+# Output:
+# 
+
+# Exit:
+# 200
+
+begin
+    bool b = true;
+    int i = 4;
+    i -= b
+end

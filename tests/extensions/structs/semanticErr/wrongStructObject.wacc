@@ -1,0 +1,11 @@
+begin
+    struct sa is
+        int s
+        int b
+    end
+    struct sb is
+        int s
+        int b
+    end
+    sa s1 = sb{1, 2}
+end

@@ -1,0 +1,8 @@
+# Line UndefinedIdentifierError
+begin
+    class sa is
+        int s
+        int b
+    end
+    sa s = sa{1, pr}
+end

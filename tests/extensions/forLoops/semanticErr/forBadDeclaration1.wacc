@@ -1,0 +1,13 @@
+# error -> int i = 'a'
+
+# Output:
+# semantic_error
+
+# Exit:
+# 200
+
+begin
+  for (int i = 'a'; i < 5; i = i + 1) do
+    skip
+  done
+end

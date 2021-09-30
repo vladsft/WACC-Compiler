@@ -1,0 +1,7 @@
+# Exit Code:
+# 100
+
+begin
+    int i = 5;
+    i+-;
+end

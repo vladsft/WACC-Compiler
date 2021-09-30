@@ -1,0 +1,28 @@
+# Output:
+# 3
+# false
+# 1
+# hello
+# 4
+# true
+# 2
+# world
+# done
+
+
+begin
+    int f(int a, bool b, char c, string d, sema s) is 
+        println a;
+        println b;
+        println c;
+        println d;
+        sema_up s;
+        return 0
+    end
+    sema s = sema(0);
+    wacc f(3, false, '1', "hello", s);
+    sema_down s;
+    wacc f(4, true, '2', "world", s);
+    sema_down s;
+    println "done"
+end

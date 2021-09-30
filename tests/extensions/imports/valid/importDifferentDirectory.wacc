@@ -1,0 +1,8 @@
+# Output: 
+# 43
+
+import "../lib/difflib.wacc";
+begin
+    int x = call difflib::f();
+    println x
+end

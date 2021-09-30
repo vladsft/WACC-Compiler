@@ -1,0 +1,4 @@
+begin
+    int x = call lib::x();
+    print x
+end

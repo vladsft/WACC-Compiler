@@ -1,0 +1,21 @@
+# Output:
+# 1
+
+begin
+    class counter is
+        int n
+        int increment() is
+            this.n = this.n + 1;
+            println this.n;
+            return this.n
+        end
+    end
+
+    counter c = counter{0};
+    int _ = call c.increment();
+    # wacc c.increment();
+    int i = 0;
+    while i < 10000 do 
+        i = i + 1
+    done
+end

@@ -1,0 +1,13 @@
+# for typo
+
+# Output:
+# syntax_error
+
+# Exit:
+# 100
+
+begin
+  fo (int i = 0; i < 5; i++) do
+    skip
+  done
+end

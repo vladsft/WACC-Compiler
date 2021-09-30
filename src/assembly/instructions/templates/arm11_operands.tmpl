@@ -1,0 +1,25 @@
+Register=>
+    r0 
+    r1
+    r2
+    r3
+    r4
+    r5
+    r6
+    r7
+    r8
+    r9
+    r10
+    r11
+    r12
+    sp
+    lr
+    cpsr
+
+//These all take in Operands
+address->
+    [<op>.Reg</op><if ne 0 .Offset>, <op>.Offset</op><if ne 0 .Multiplier>, <op>.Multiplier</op><end><end>]
+immediate->
+    #<.>
+pseudoImmediate->
+    =<.>

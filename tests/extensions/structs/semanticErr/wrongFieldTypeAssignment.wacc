@@ -1,0 +1,8 @@
+begin
+    struct sa is
+        int a
+        char b
+    end
+    sa obj = sa{1, 'a'};
+    int a = obj.b
+end

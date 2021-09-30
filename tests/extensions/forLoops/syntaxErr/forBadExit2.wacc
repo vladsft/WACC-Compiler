@@ -1,0 +1,13 @@
+# error -> i > 'a'
+
+# Output:
+# semantic_error
+
+# Exit:
+# 100
+
+begin
+  for (exit 5; i < 'a'; i = i + 1) do
+    skip
+  done
+end

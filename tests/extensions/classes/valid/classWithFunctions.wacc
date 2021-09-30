@@ -1,0 +1,14 @@
+begin
+    class sa is
+        int a   # 4
+        char b  # 1
+        bool c  # 1
+    
+        int foo() is
+            return 1
+        end
+    end
+
+end
+
+

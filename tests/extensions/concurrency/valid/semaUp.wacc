@@ -1,0 +1,4 @@
+begin
+    sema s = sema(3);
+    sema_up s
+end

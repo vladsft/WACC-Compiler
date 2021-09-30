@@ -1,0 +1,19 @@
+# Output:
+# 4
+
+begin
+    class counter is
+        int count
+
+        int increment() is
+            this.count = this.count + 1;
+            return 0
+        end
+    end
+    counter c = counter{0};
+    int _ = call c.increment();
+    _ = call c.increment();
+    _ = call c.increment();
+    _ = call c.increment();
+    println c.count
+end

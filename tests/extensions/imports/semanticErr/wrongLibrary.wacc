@@ -1,0 +1,5 @@
+import "notfound.wacc";
+begin
+    int x = call notfound::get(3);
+    print x
+end

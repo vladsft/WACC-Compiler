@@ -1,0 +1,58 @@
+#This file is part of the WACC standard library, it defines functions for operating on arrays
+begin
+    #cons_int adds an int to the start of the array
+    #arr is freed
+    int[] cons_int(int a, int[] arr) is
+        int length = len arr;
+        int[] new_arr = make(int, length+1);
+        new_arr[0] = a;
+        int i = 0;
+        while i < length do
+            new_arr[i+1] = arr[i];
+            i = i + 1
+        done;
+        return new_arr
+    end
+
+    #snoc_int adds an int to the end of the array
+    #arr is freed
+    int[] snoc_int(int a, int[] arr) is
+        int length = len arr;
+        int[] new_arr = make(int, length+1);
+        int i = 0;
+        while i < length do
+            new_arr[i] = arr[i];
+            i = i + 1
+        done;
+        new_arr[length] = a;
+        return new_arr
+    end
+    #append_int adds an int array to the end of the array
+    #both arrays are freed
+    int[] append_int(int[] arr1, int[] arr2) is
+        int length = len arr1 + len arr2;
+        int[] new_arr = make(int, length);
+        int i = 0;
+        while i < len arr1 do
+            new_arr[i] = arr1[i];
+            i = i + 1
+        done;
+            while i < length do 
+            new_arr[i] = arr2[i - len arr1];
+            i = i + 1
+        done;
+        return new_arr
+    end
+    string[] snoc_string_array(string s, string[] arr) is 
+        int length = len arr;
+        string[] new_arr = make(string, length+1);
+        int i = 0;
+        while i < length do
+            new_arr[i] = arr[i];
+            i = i + 1
+        done;
+        new_arr[length] = s;
+        return new_arr
+    end
+    skip
+end

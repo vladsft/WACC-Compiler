@@ -1,0 +1,13 @@
+# Output:
+# 1
+# 2
+
+begin
+    class sa is
+        int a
+        int b
+    end
+    sa obj = sa{1, 2};
+    println obj.a;
+    println obj.b
+end

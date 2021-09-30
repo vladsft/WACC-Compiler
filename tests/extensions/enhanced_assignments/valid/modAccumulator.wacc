@@ -1,0 +1,12 @@
+# Output:
+# 0
+# 1
+
+begin
+    int i = 30;
+    int j = 7;
+    i %= 5;
+    j %= 2;
+    println i;
+    println j
+end

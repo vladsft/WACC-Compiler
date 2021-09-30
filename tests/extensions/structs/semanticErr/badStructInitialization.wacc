@@ -1,0 +1,10 @@
+begin
+    struct sa is
+        int s   # 4
+        int b  # 1
+    end
+
+    sa a = sa
+end
+
+

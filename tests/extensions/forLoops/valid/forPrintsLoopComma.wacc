@@ -1,0 +1,16 @@
+# Prints the elements in the x,y.
+
+# Output:
+# 0, 1, 2, 3, 4.
+
+begin
+	for (int i = 0; i < 5; i = i + 1) do
+		if (i != 4) then
+		  print i ;
+		  print ", "
+		else
+			print i ;
+			print '.'
+		fi
+	done
+end
